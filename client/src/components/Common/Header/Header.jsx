@@ -44,7 +44,7 @@ function Header() {
 
   const handleMenu = () => {
     dispatch(sidebarMini(commonData.collapse));
-    overlay.style.display = 'block';
+    if (width <= 1010) overlay.style.display = "block";
   };
 
   const handleClickOverlay = () => {
